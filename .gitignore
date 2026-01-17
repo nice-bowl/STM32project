@@ -1,5 +1,23 @@
-build
+# --- 编译输出文件 (不需要上传) ---
+build/
+Debug/
+Release/
+
+# --- CubeMX 生成的临时文件 ---
 mx.scratch
+*.tmp
+*.bak
+
+# --- VS Code / IDE 配置文件 (通常含本地路径，不建议上传) ---
+.vscode/
+.idea/
+*.launch
+
+# --- 关键目录说明 ---
+# /Drivers 和 /cmake 通常包含项目必须的库和脚本，建议上传。
+# 如果您确实想使用子模块(submodule)管理它们，可以取消下面两行的注释：
+# /Drivers
+# /cmake
+
+# --- 其他 ---
 !.settings
-/cmake
-/Drivers
